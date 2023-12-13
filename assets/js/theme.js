@@ -38,6 +38,10 @@ $(window).on('load resize', function() {
     }
 }),
 
+$(window).scroll(function(){
+    $('.topnav').toggleClass('bg-dark navbar-light shadow-sm scrollednav py-2', $(this).scrollTop() > 50);
+    });
+
 $(document).ready(function() {
 
     // Plugins init
